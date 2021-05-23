@@ -1,0 +1,603 @@
+*,*::before,*::after{
+    /* padding: 0;
+    margin: 0; */
+    box-sizing: border-box;
+    text-decoration: none;
+    /* line-height: normal; */
+}
+
+.name{
+    font-family: 'Dancing Script', cursive;
+    font-size: 2em;
+}
+h1,h2,h3,h4,p{
+    padding: 0%;
+    margin: 0%;
+}
+body{
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+html{
+    padding: 0;
+    /* width: 0; */
+    margin: 0%  ;
+    box-sizing: border-box;
+
+}
+section{
+
+}
+.row{
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    width: 80%;
+    margin: auto;
+}
+
+.title{
+    font-size: 2.5em;
+    text-transform: capitalize;
+    text-align: center;
+    margin-top: 3em;
+    padding: 1.2em 0;
+}
+
+header{
+    /* background-color: aquamarine; */
+    position: relative;
+
+}
+/*======================= navbar ===========================*/
+
+.waves{
+    width: 670px;
+    height: 790px;
+    background-color: antiquewhite;
+    position: absolute;
+    top:15%;
+    right: 57%;
+    border-radius:  81% 19% 52% 48%/ 44% 51% 49% 56%;
+
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+    /* background-color: antiquewhite; */
+    height: 5em;
+    padding: 2em;
+
+}
+
+nav ul{
+    display: flex;
+    display: none;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav li{
+    /* margin-left: 4em; */
+}
+
+nav h1{
+    text-transform: uppercase;
+
+}
+nav a{
+    color:#333;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.2em;
+
+}
+
+nav ul li::after{
+   content: '';
+   width: 0%;
+   height: 2px;
+   background:#283618;
+   display: block;
+   margin: auto;
+   transition: 0.5s ease;
+}
+
+nav ul li:hover::after{
+   width: 100%;
+}
+
+/*======================= header banner ===========================*/
+.banner{
+    /* margin-top: 5em; */
+}
+
+.banner .row{
+    /* display: flex; */
+    width: 70%;
+    margin: auto;
+    padding-top: 5em; 
+
+}
+
+.banner .img{
+    position: relative;
+    z-index: 2;
+}
+
+.banner img{
+    width: 100%;
+    display: none;
+}
+
+.banner .col:last-child{
+
+    position: relative;
+    z-index: 2;
+}
+
+.banner span{
+
+    color: #606c38;
+}
+
+.banner h4{
+    font-size:2em;
+    letter-spacing: 4px;
+    text-transform: capitalize;
+    color: rgb(88, 84, 84);
+    padding: 0;
+    margin: 0%;
+    
+}
+.banner h3{
+    font-size:3em;
+    text-transform: capitalize;
+    color: rgb(88, 84, 84);
+
+}
+.banner h2{
+    font-size:3em;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    color: #606c38;
+}
+.banner h1{
+    font-size:3.5em;
+    letter-spacing: 4px;
+    text-transform: capitalize;
+}
+
+.banner a{
+    /* font-size: 1.5em; */
+    text-decoration: none;
+    padding: .5em;
+    border: 1px solid #283618;
+    border-radius: 50px;
+    display: inline-block;
+    text-transform: capitalize; 
+    position: relative;
+    transition: all .5s;
+    cursor: pointer;
+ }
+ .banner a:hover{
+    color:white;
+    background-color:  black;
+ 
+ }
+
+/*======================= about banner ===========================*/
+.about{
+    background-color: #283618;
+    color: antiquewhite;
+    margin-bottom: 8px;
+}
+.about p{
+    background-color: #283618;
+    color: antiquewhite;
+    /* padding-bottom: 3em; */
+    position: relative;
+    z-index: 2;
+}
+
+.about p{
+font-size: 1.2em;
+}
+
+/* .about  */
+
+
+/*======================= projects banner ===========================*/
+.projects .title{
+    margin: 0;
+    padding-top: 0;
+}
+
+.skillsets .bgtext{
+    text-align: center;
+    /* font-size: 35em; */
+    color: antiquewhite;
+    text-transform: uppercase;
+    display: none;
+}
+
+.contact-us{
+    /* width: 80%; */
+    margin: auto;
+}
+
+
+/* .contact-us .row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} */
+
+.contact h3{
+    /* font-size: 2em; */
+}
+.contact h4{
+    color: rgb(88, 84, 84);
+    /* font-size: 2em; */
+}
+
+.contact .col{
+
+}
+
+.contact .col div{
+    /* display: flex; */
+    align-items: center;
+    margin-bottom: 40px;
+}
+.contact .col:last-child{
+   outline-offset: 1px solid;
+}
+
+.col input ,.col textarea{
+    width: 100%;
+    padding: 1em;
+    margin-bottom: 1em;
+    outline: none;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.contact .col button{
+   font-size: 1em;
+   text-decoration: none;
+   color:  #f44336;
+   padding: .5em;
+   border: 1px solid #f44336;
+
+   /* display: inline-block; */
+   text-transform: capitalize; 
+   position: relative;
+   transition: all .5s;
+   outline: none;
+   outline: none;
+   background: #fff;
+}
+
+.contact .col button:hover{
+   background: #f44336;
+   color:#fff;
+
+}
+
+    /*======================================== media query ===============================================================================================*/
+@media (min-width:600px ) {
+
+    section{
+        margin: 0px 0 ;
+    }
+
+    .row{
+        display: flex  !important;
+        justify-content: center  !important; 
+        align-items: center  !important;
+        max-width: 80%  !important;
+        margin: auto  !important;
+    }
+    
+    .title{
+        font-size: 2.5em;
+        text-transform: capitalize;
+        text-align: center;
+        margin-top: 3em;
+        padding: 1.2em 0;
+    }
+    
+    header{
+        /* background-color: aquamarine; */
+        position: relative;
+    
+    }
+    /*======================= big screen navbar ===========================*/
+    
+    .waves{
+        width: 670px;
+        height: 790px;
+        background-color: antiquewhite;
+        position: absolute;
+        top:15%;
+        right: 57%;
+        border-radius:  81% 19% 52% 48%/ 44% 51% 49% 56%;
+    
+    }
+    nav{
+        display: flex  !important;
+        justify-content: space-between  !important;
+        align-items: center  !important;
+        width: 90%;
+        margin: auto;
+        /* background-color: antiquewhite; */
+        height: 5em;
+        padding: 2em;
+    
+    }
+    
+    nav ul{
+        display: flex  !important;
+        align-items: center  !important;
+    }
+    
+    nav li{
+        margin-left: 4em  !important;
+        list-style: none  !important;
+    }
+    
+    nav h1{
+        text-transform: uppercase;
+    
+    }
+    nav a{
+        color:#333;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 1.2em;
+    
+    }
+    
+    nav ul li::after{
+       content: '';
+       width: 0%;
+       height: 2px;
+       background:#283618;
+       display: block;
+       margin: auto;
+       transition: 0.5s ease;
+    }
+    
+    nav ul li:hover::after{
+       width: 100%;
+    }
+    
+    /*======================= big screen header banner ===========================*/
+    .banner{
+        /* margin-top: 5em; */
+        color: rgb(88, 84, 84);
+        /* background-color: #f44336; */
+    }
+    
+    .banner .row{
+        display: flex  !important;
+        justify-content: center  !important;
+        width: 70%;
+        margin: auto;
+    
+    }
+    
+    .banner .img{
+        width: 500px;
+        position: relative;
+        z-index: 2;
+    }
+    
+    .banner img{
+        /* width: 100%; */
+        display: block;
+        flex: 50%;
+    }
+    
+    .banner .col:last-child{
+        flex: 50%  !important;
+        margin-left: 3em !important;
+
+    }
+    .banner span{
+        /* color: #283618; */
+        color: #606c38;
+    }
+    .banner h4{
+        font-size:2.5em;
+        letter-spacing: px;
+        text-transform: capitalize;
+
+        
+    }
+    .banner h2{
+        font-size:3em;
+        letter-spacing: .5px;
+        text-transform: capitalize;
+        color: #606c38;
+    }
+    .banner h3{
+        font-size:2.5em;
+        /* letter-spacing: 4px; */
+        text-transform: capitalize;
+
+    
+    }
+ 
+    .banner h1{
+        font-size:5em;
+        letter-spacing: 4px;
+        text-transform: capitalize;
+    }
+    
+    .banner a{
+        font-size: 1.5em;
+        text-decoration: none;
+        padding: .5em;
+        border: 1px solid #283618;
+        border-radius: 50px;
+        display: inline-block;
+        text-transform: capitalize; 
+        position: relative;
+        transition: all .5s;
+        cursor: pointer;
+     }
+     .banner a:hover{
+        color:white;
+        background-color: rgb(88, 84, 84);
+     
+     }
+    
+    /*=======================  big screen header banner ===========================*/
+    .about{
+        background-color: #283618;
+        color: antiquewhite;
+        margin-bottom: 8px;
+    }
+
+    .about .row{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 3em;
+    }
+    .about p{
+        background-color: #283618;
+        color: antiquewhite;
+        font-size: 1.5em;
+        position: relative;
+        z-index: 2;
+    }
+    
+    .about p{
+
+    }
+    
+    .about .col:last-child{
+      border:3px solid antiquewhite ;
+      list-style:decimal;
+      /* width: 100%; */
+      flex: 50%;
+      text-align: center;
+      font-size: 1.5em;
+    }
+
+    .about .col:first-child{
+        flex: 50%;
+    }
+    
+    .projects .row{
+        justify-content: space-between;
+        align-items: stretch;
+        flex-wrap: wrap;
+        
+    }
+    .projects .col{
+        width: 400px;
+        height: 400px;
+   
+        flex: 20%;
+        
+    }
+    .projects .card{
+        width: 400px;
+        height: 400px;
+    
+        /* flex: 20%; */
+
+    }
+    
+    .projects img{
+        width: 100%;
+    }
+    .skillsets .bgtext{
+        text-align: center;
+        font-size: 20em;
+        color: antiquewhite;
+        text-transform: uppercase;
+        display: block  ;
+    }
+    .skillsets .col{
+        width: 300px;
+        margin-left:8px;
+        
+    }
+    
+    .skillsets img{
+        width: 100%;
+    }
+    .contact-us{
+        width: 80%;
+        margin: auto;
+    }
+    
+    
+    .contact-us .row{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .contact h3{
+        font-size: 2em;
+    }
+    .contact h4{
+        color: rgb(88, 84, 84);
+        font-size: 2em;
+    }
+    
+    .contact .col{
+        flex-basis: 48%;
+        margin-bottom: 30px;
+    }
+    
+    .contact .col div{
+        display: flex;
+        align-items: center;
+        margin-bottom: 40px;
+    }
+    .contact .col:last-child{
+       outline-offset: 1px solid;
+    }
+    
+    .col input ,.col textarea{
+        width: 100%;
+        padding: 1em;
+        margin-bottom: 1em;
+        outline: none;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+    }
+    
+    .contact .col button{
+       font-size: 1em;
+       text-decoration: none;
+       color:  #f44336;
+       padding: .5em;
+       border: 1px solid #f44336;
+    
+       display: inline-block;
+       text-transform: capitalize; 
+       position: relative;
+       transition: all .5s;
+       outline: none;
+       outline: none;
+       background: #fff;
+    }
+    
+    .contact .col button:hover{
+       background: #f44336;
+       color:#fff;
+    
+    }
+}
