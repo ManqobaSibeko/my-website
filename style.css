@@ -71,7 +71,6 @@ nav{
     /* background-color: antiquewhite; */
     height: 5em;
     padding: 2em;
-
 }
 
 nav ul{
@@ -188,6 +187,15 @@ nav ul li:hover::after{
     color:white;
     background-color:  black;
  
+ }
+
+ .banner .links{
+     width: 40px;
+     /* border: 1px solid #283618; */
+ }
+
+ .banner img{
+     width: 100%;
  }
 
 /*======================= about banner ===========================*/
